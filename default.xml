@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- <remote fetch="git://git.openembedded.org/" name="oe"/> -->
+  <remote fetch="https://github.com/openembedded/" name="oe" />
+  <remote fetch="http://git.yoctoproject.org/git/" name="yocto"/>
+  <remote fetch="https://github.com/linux4sam/" name="linux4sam" />
+  <!-- <remote fetch="https://code.qt.io/cgit/yocto/" name="qt5" /> -->
+  <remote fetch="https://github.com/meta-qt5/" name="qt5" />
+
+  <project name="meta-atmel" remote="linux4sam" revision="rocko" />
+  <project name="meta-openembedded" remote="oe" revision="rocko" />
+  <project name="meta-qt5" remote="qt5" revision="rocko" />
+  <project name="poky" remote="yocto" revision="rocko"/>
+</manifest>
