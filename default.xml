@@ -27,6 +27,7 @@
   <project path="external/llvm" name="platform/external/llvm" groups="pdk" />
   <project path="external/lzma" name="platform/external/lzma" />
   <project path="external/mksh" name="platform/external/mksh" groups="pdk" />
+  <project path="external/openssl" name="platform/external/openssl" groups="pdk" />
   <project path="external/stlport" name="platform/external/stlport" groups="pdk" />
   <project path="external/zlib" name="platform/external/zlib" groups="pdk" />
   <project path="frameworks/native" name="platform/frameworks/native" groups="pdk" />
