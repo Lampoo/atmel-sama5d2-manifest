@@ -11,10 +11,22 @@
            fetch="https://android.googlesource.com" />
   -->
 
+  <!-- lampoo repository -->
+  <remote  name="lampoo"
+           fetch="https://github.com/Lampoo" />
+
   <default revision="refs/tags/android-4.4.4_r2.0.1"
            remote="aosp"
            sync-j="4" />
 
+  <!-- at91bootstrap and kernel sources for atmel sama5d2 device -->
+  <project path="at91bootstrap" name="at91bootstrap" remote="lampoo" revision="master" groups="pdk" />
+  <project path="kernel" name="linux-at91" remote="lampoo" revision="master" groups="pdk" />
+
+  <!-- bootstrap source -->
+  <project path="vendor/lampoo" name="vendor-lampoo" remote="lampoo" revision="master" groups="pdk" />
+
+  <!-- aosp native sources -->
   <project path="build" name="platform/build" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
