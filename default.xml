@@ -24,12 +24,12 @@
   <project path="kernel" name="linux-at91" remote="lampoo" revision="master" groups="pdk" />
 
   <!-- bootstrap source -->
-  <project path="vendor/lampoo" name="vendor-lampoo" remote="lampoo" revision="master" groups="pdk" />
+  <project path="vendor/lampoo" name="vendor-lampoo" remote="lampoo" revision="master" groups="pdk" >
+    <copyfile src="bootstrap/Makefile" dest="Makefile" />
+  </project>
 
   <!-- aosp native sources -->
-  <project path="build" name="platform/build" groups="pdk" >
-    <copyfile src="core/root.mk" dest="Makefile" />
-  </project>
+  <project path="build" name="platform/build" groups="pdk" />
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
   <project path="bionic" name="platform/bionic" groups="pdk" />
   <project path="external/clang" name="platform/external/clang" groups="pdk" />
