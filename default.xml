@@ -23,6 +23,9 @@
   <project path="at91bootstrap" name="at91bootstrap" remote="lampoo" revision="master" groups="pdk" />
   <project path="kernel" name="linux-at91" remote="lampoo" revision="master" groups="pdk" />
 
+  <!-- update tools for atmel sama5 device -->
+  <project path="external/sam-ba-3.2.2" name="sam-ba-3.2.2" remote="lampoo" revision="master" groups="pdk" />
+
   <!-- bootstrap source -->
   <project path="vendor/lampoo" name="vendor-lampoo" remote="lampoo" revision="master" groups="pdk" >
     <copyfile src="bootstrap/Makefile" dest="Makefile" />
