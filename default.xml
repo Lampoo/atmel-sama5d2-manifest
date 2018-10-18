@@ -29,6 +29,7 @@
   <!-- bootstrap source -->
   <project path="vendor/lampoo" name="vendor-lampoo" remote="lampoo" revision="master" groups="pdk" >
     <copyfile src="bootstrap/Makefile" dest="Makefile" />
+    <linkfile src="bootstrap/includes.mk" dest="Android.mk" />
   </project>
 
   <!-- aosp native sources -->
